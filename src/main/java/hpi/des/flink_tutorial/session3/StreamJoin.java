@@ -16,6 +16,8 @@ public class StreamJoin {
 
         final StreamingFileSink<TaxiRide> sink = StreamingFileSinkFactory.newSink("/tmp/output_session_3a");
 
+        env.setParallelism(4);
+
         DataStream<TaxiRide> rideStream = env.addSource(new TaxiRideGeneratorProcTime());
         DataStream<TaxiFare> fareStream = env.addSource(new TaxiFareGeneratorProcTime());
 
