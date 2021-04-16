@@ -37,9 +37,6 @@ TLC Taxi Zone in which the taximeter was engaged
 9) DOLocationID,
 TLC Taxi Zone in which the taximeter was disengaged
 
-
-
-
 10) payment_type,
 A numeric code signifying how the passenger paid for the trip.
 1= Credit card
@@ -51,25 +48,26 @@ A numeric code signifying how the passenger paid for the trip.
 
 11) Fare_amount,
 The time-and-distance fare calculated by the meter.
-Extra,
+
+12) Extra,
 Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges.
 
-12) Mta_tax,
+13) Mta_tax,
 $0.50 MTA tax that is automatically triggered based on the metered rate in use.
 
-13) Tip_amount,
+14) Tip_amount,
 Tip amount – This field is automatically populated for credit card tips. Cash tips are not included.
 
-14) Tolls_amount,
+15) Tolls_amount,
 Total amount of all tolls paid in trip.
 
-15) Improvement_surcharge,
+16) Improvement_surcharge,
 $0.30 improvement surcharge assessed trips at the flag drop. The improvement surcharge began being levied in 2015.
 
-16) Total_amount,
+17) Total_amount,
 The total amount charged to passengers. Does not include cash tips.
 
-17) Congestion_surcharge
+18) Congestion_surcharge
  $2.50 per trip when the transportation is provided by a medallion taxicab vehicle.
 
 
